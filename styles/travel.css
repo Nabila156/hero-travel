@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+.mulish-font {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+ 
+/* shared style */
+
+.display-flex{
+    display: flex;
+}
+.black{
+    color: rgb(19, 19, 24);
+}
+.color{
+    color: rgb(255, 84, 0);
+}
+.dark-2{
+    color: rgb(66, 66, 71);
+}
+
+/* header */
+
+.header{
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+}
+
+#icon{
+    width: 3rem;
+    height: 3.5rem;
+}
+#bars{
+    display: none;
+}
+.name{
+    font-size: 2.25rem;
+    gap: 17px;
+    align-items: center;
+}
+#hero{
+    font-weight: 800;
+}
+.list{
+    gap: 44px;
+}
+.list-item{
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+#home{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* explore your travel */
+
+.explore{
+    background-image: url(../Images/image1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1100px;
+    border-radius: 16px;
+    padding: 90px 150px;
+    background-color: rgba(19, 19, 24, 0.5);
+    background-blend-mode: overlay;
+}
+.explore > div{
+    margin-top: 25px;
+}
+.explore-travel{
+    text-align: center;
+}
+.explore-title{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 800;  
+}
+.explore-description{
+    margin-bottom: 70px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+
+/* input */
+
+.input{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+.input-item{
+    max-width: 174px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    backdrop-filter: blur;
+}
+#find{
+    background-color: rgb(255, 84, 0);
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+/* Our Popular Tours */
+
+.popular-tours{
+    margin-top: 100px;
+    gap: 50px;
+}
+.popular-tours h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.popular-tours p, ul{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: rgba(19, 19, 24, 0.7);
+}
+
+/* MEDIA QUERY */
+/* small device */
+
+@media screen and (max-width:576px) {
+    #bars{
+        display: block;
+        font-size: 2.5rem;
+    }
+    .header{
+        gap: 10px;
+    }
+    .input{
+        flex-direction: column;
+    }
+    .list-item{
+        display: none;
+    }
+    .name{
+        font-size: 2rem;
+        margin: 10px;
+    }
+    #icon{
+        width: 2.5rem;
+        height: 3rem;
+    }
+    .explore{
+        padding: 15px;
+    }
+    .explore-title{
+        font-size: 3rem;
+    }
+    .input{
+        align-items: center;
+    }
+    /* teacher */
+    .input-item{
+        max-width: 300px;
+        width: 100%;
+        padding: auto;
+    }
+    .popular-tours{
+        flex-direction: column;
+    }
+    .popular-tours h2, p, ul{
+        margin: 15px;
+    }
+}
